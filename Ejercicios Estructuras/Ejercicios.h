@@ -93,7 +93,7 @@ int functSquareCube() {
 	const int size = 10;
 	int arrNumberList[size]{};
 	int arrNumberSquare[size]{};
-	srand(time(0));
+	srand(unsigned(time(NULL)));
 
 	cout << "El cuadrado del arreglo: ";
 	for (int i = 0; i < size; ++i) {
@@ -175,23 +175,33 @@ int functMenosUno() {
 	}
 	return 0;
 }
-float functOrder() {
+int functOrder() {
 	
 	const int size = 15;
-	int arrayContainer[size]{};
-	int arrayToOrder[size]{};
-	srand(time(0));
+	int randomizedArray[size]{};
+	srand(unsigned(time(NULL)));
 
-	cout << "El arreglo arbitrariamente contiene: ";
-	for (int i : arrayContainer) {
-		i = (rand() % 10);
-		arrayToOrder[i] = i;
+	cout << "Arreglo arbitrario: " << endl;
+	for (int i = 0; i < size; ++i) {
+		randomizedArray[i] = (rand() % 10);
+		cout << randomizedArray[i] << ' ';
 	}
-	cout << endl;
 
-	cout << "Ordenado: ";
-	for (int i : arrayToOrder) {
-		cout << i << ' ';
+	cout << endl << endl;
+
+	cout << "Arreglo ordenado: " << endl;
+	for (int i = 0; i < size - 1; i++) {
+		for (int j = i + 1; j < size; j++) {
+			if (randomizedArray[i] > randomizedArray[j]) {
+
+				int auxiliary = randomizedArray[j];
+				randomizedArray[j] = randomizedArray[i];
+				randomizedArray[i] = auxiliary;
+			}
+		}
+	}
+	for (int i = 0; i < size; i++) {
+		cout << randomizedArray[i] << " ";
 	}
 	cout << endl;
 
