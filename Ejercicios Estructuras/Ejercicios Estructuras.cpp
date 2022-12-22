@@ -15,6 +15,6 @@ int main() {
     //functInverse(); 7
     //functGrades(); 8
     //functMenosUno(); 9
-    functOrder();
+    //functOrder(); 10
     return 0;
 }
