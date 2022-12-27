@@ -210,3 +210,15 @@ int functOrder() {
 void functMonths() {
 	
 }
+int functPointerExtra() {
+	int numero[5]{};
+
+	for (int i = 0; i < 5; i++) {
+		cout << "Ingresa numero: " << endl;
+		cin >> numero[i];
+	}
+	for (int i = 0; i < 5; i++) {
+		cout << "La direccion de memoria " << & numero[i] << " tiene un valor de: " << numero[i] << ' ';
+	}
+	return 0;
+}

@@ -16,5 +16,7 @@ int main() {
     //functGrades(); 8
     //functMenosUno(); 9
     //functOrder(); 10
+    //functMonths();
+    functPointerExtra();
     return 0;
 }
