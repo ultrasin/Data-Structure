@@ -1,6 +1,9 @@
 #pragma once
-
 using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
+
+constexpr auto ASK_FOR_INPUT_SIZE = "Ingresa el tamano: ";
+constexpr auto USER_INPUT_VALUE = "Agrega un valor positivo; negativo cancela: ";
+constexpr auto MESSAGE_RESULT = "El resultado es: ";
 
 int functPrimerosDos() {
 
@@ -222,3 +225,50 @@ int functPointerExtra() {
 	}
 	return 0;
 }
+void functAllocMemory() {
+
+	int size;
+	cout << ASK_FOR_INPUT_SIZE << endl;
+	cin >> size;
+	int* array = new int [size];
+	int value = 0;
+
+	cout << USER_INPUT_VALUE << endl;
+	for (int i = 0; i < size; ++i) {
+		cin >> value;
+		if (value >= 0) {
+			array[i] = value;
+		}
+	}
+	
+	cout << MESSAGE_RESULT << endl;
+	for (int i = 0; i < size; ++i) {
+		cout << array[i] << ' ';
+	}
+}
+class CrazyNumber {
+	
+	int numberOne;
+	int numberTwo;
+
+public:
+	CrazyNumber(int definedNumber, int undefinedNumber) {
+		this->numberOne = definedNumber;
+		this->numberTwo = undefinedNumber;
+	}
+
+	void print() {
+		cout << numberOne << " + loco" << numberTwo;
+	}
+
+	CrazyNumber operator+ (CrazyNumber cr2) {
+		CrazyNumber cr3(0,0);
+		cr3.numberOne = this->numberOne + cr2.numberOne;
+		cr3.numberTwo = this->numberTwo + cr2.numberTwo;
+		return cr3;
+	}
+};//overloading operators
+class Dog {
+public:
+	virtual void Bark() = 0;
+};

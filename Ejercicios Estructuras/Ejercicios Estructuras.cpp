@@ -6,7 +6,13 @@
 #include <cstdlib>
 #include "Ejercicios.h"
 
+class Rottweiler :public Dog {
+    void Bark() {
+        cout << "Woof...\n";
+    }
+};
 int main() {
+
     //functPrimerosDos(); 1y2
     //funtMediaDeDiez(); 3
     //functMultiples(); 4
@@ -16,7 +22,17 @@ int main() {
     //functGrades(); 8
     //functMenosUno(); 9
     //functOrder(); 10
-    //functMonths();
-    functPointerExtra();
-    return 0;
+    //functMonths(); 11. TODO
+    //functPointerExtra(); //EXTRA
+    //functAllocMemory(); // EXTRA
+
+    /*CrazyNumber cr1(3, 5);
+    CrazyNumber cr2(2, 4);
+    CrazyNumber cr3 = cr1 + cr2;
+    cr3.print();*/
+
+    Dog* Kira = new Rottweiler();
+    Kira->Bark();
+
+    system("pause>0");
 }
