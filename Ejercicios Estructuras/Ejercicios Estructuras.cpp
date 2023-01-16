@@ -4,9 +4,10 @@
 #include <numeric>
 #include <math.h>
 #include <cstdlib>
-#include "Ejercicios.h"
+#include "examples.h"
+#include "classes.h"
 
-class Rottweiler :public Dog {
+class Amstaff :public Dog {
     void Bark() {
         cout << "Woof...\n";
     }
@@ -31,7 +32,7 @@ int main() {
     CrazyNumber cr3 = cr1 + cr2;
     cr3.print();*/
 
-    Dog* Kira = new Rottweiler();
+    Dog* Kira = new Amstaff();
     Kira->Bark();
 
     system("pause>0");

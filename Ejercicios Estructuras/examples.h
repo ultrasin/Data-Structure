@@ -1,27 +1,29 @@
 #pragma once
+
 using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
 
-constexpr auto ASK_FOR_INPUT_SIZE = "Ingresa el tamano: ";
-constexpr auto USER_INPUT_VALUE = "Agrega un valor positivo; negativo cancela: ";
-constexpr auto MESSAGE_RESULT = "El resultado es: ";
+constexpr auto ASK_USER_SIZE = "Add a size: ";
+constexpr auto ASK_TYPE_ELEMENT_SIZE = "Add a total size: ";
+constexpr auto USER_INPUT_VALUE = "Add possitive values; cancels with negative values: ";
+constexpr auto MESSAGE_RESULT = "Result is: ";
 
 int functPrimerosDos() {
 
 	int vectorSize;
 	vector<int> vector;
-	cout << "Digite un tamano total de numeros a ingresar: ";
+	cout << ASK_TYPE_ELEMENT_SIZE;
 	cin >> vectorSize;
 
 	if (vectorSize < 1)
-		cout << "Valor no admitido";
+		cout << "Incorrect value";
 	
 	for (int i = 0; i < vectorSize; ++i) {
 		int value;
-		cout << endl << "Ingresa el valor " << i + 1 << ": " << endl;
+		cout << endl << "Add value in position(" << i + 1 << "): " << endl;
 		cin >> value;
 		vector.push_back(value);
 	}
-	cout << endl << "Los valores son: ";
+	cout << endl << MESSAGE_RESULT;
 	for (int i = 0; i < vector.size(); ++i) {
 		cout << vector[i] << ' ';
 	}
@@ -246,29 +248,4 @@ void functAllocMemory() {
 		cout << array[i] << ' ';
 	}
 }
-class CrazyNumber {
-	
-	int numberOne;
-	int numberTwo;
 
-public:
-	CrazyNumber(int definedNumber, int undefinedNumber) {
-		this->numberOne = definedNumber;
-		this->numberTwo = undefinedNumber;
-	}
-
-	void print() {
-		cout << numberOne << " + loco" << numberTwo;
-	}
-
-	CrazyNumber operator+ (CrazyNumber cr2) {
-		CrazyNumber cr3(0,0);
-		cr3.numberOne = this->numberOne + cr2.numberOne;
-		cr3.numberTwo = this->numberTwo + cr2.numberTwo;
-		return cr3;
-	}
-};//overloading operators
-class Dog {
-public:
-	virtual void Bark() = 0;
-};

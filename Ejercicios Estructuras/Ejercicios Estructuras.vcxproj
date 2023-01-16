@@ -130,7 +130,8 @@
     <ClCompile Include="Ejercicios Estructuras.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ejercicios.h" />
+    <ClInclude Include="classes.h" />
+    <ClInclude Include="examples.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
