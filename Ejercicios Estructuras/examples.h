@@ -230,7 +230,7 @@ int functPointerExtra() {
 void functAllocMemory() {
 
 	int size;
-	cout << ASK_FOR_INPUT_SIZE << endl;
+	cout << ASK_TYPE_ELEMENT_SIZE << endl;
 	cin >> size;
 	int* array = new int [size];
 	int value = 0;

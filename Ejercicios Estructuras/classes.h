@@ -1,6 +1,6 @@
 #pragma once
 
-using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
+using std::string; using std::cout; using std::cin; using std::endl;
 
 class CrazyNumber {
 
