@@ -4,7 +4,7 @@
 #include <map>
 #include <list>
 
-using namespace std;
+using namespace std; //the best way to use std elements is std::subclass
 
 class Node {
 public:
@@ -19,7 +19,7 @@ public:
 
 }*first, *last;
 
-void insertNode() {
+void insertInFront() {
     Node* newNode = new Node(); //often called temp
     cout << "Add the word for the new node: ";
     cin >> newNode->word;
@@ -35,6 +35,22 @@ void insertNode() {
         last = newNode;
     }
     cout << "\nNode added successfully...\n\n";
+}
+
+void insertInLast(Node**first,string newWord) {
+    Node* newNode = new Node();
+    newNode->word = newWord;
+    newNode->next = NULL;
+    if (*first == NULL) { //to assign previous values if there's no list
+        *first = newNode;
+        return;
+    }
+    else {
+        last = *first;
+        while (last->next != NULL) {
+            last = last->next;
+        }
+    }
 }
 
 void printList() {

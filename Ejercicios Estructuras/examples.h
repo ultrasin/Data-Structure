@@ -2,31 +2,33 @@
 
 using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
 
-constexpr auto ASK_USER_SIZE = "Add a size: ";
-constexpr auto ASK_TYPE_ELEMENT_SIZE = "Add a total size: ";
-constexpr auto USER_INPUT_VALUE = "Add possitive values; cancels with negative values: ";
-constexpr auto MESSAGE_RESULT = "Result is: ";
+constexpr auto ASK_FOR_CONTAINER_SIZE = "Type your container size: ";
+constexpr auto ADD_USER_INPUT_VALUES = "Add those values to this container: ";
+constexpr auto CONDITION_TO_STOP = "Add possitive values; cancels with negative values: ";
+constexpr auto MESSAGE_RESULT = "Operation result: ";
 
-int functPrimerosDos() {
+/*adds a size to a vector to add elements and print them afterwards*/
+int addIntegerToArrayAndPrint() {
 
-	int vectorSize;
-	vector<int> vector;
-	cout << ASK_TYPE_ELEMENT_SIZE;
-	cin >> vectorSize;
+	int size;
+	cout << ASK_FOR_CONTAINER_SIZE;
+	cin >> size;
+	int* array = new int[size];
+	int value = 0;
 
-	if (vectorSize < 1)
-		cout << "Incorrect value";
-	
-	for (int i = 0; i < vectorSize; ++i) {
-		int value;
-		cout << endl << "Add value in position(" << i + 1 << "): " << endl;
+	cout << ADD_USER_INPUT_VALUES << endl;
+	for (int i = 0; i < size; ++i) {
 		cin >> value;
-		vector.push_back(value);
+		if (value >= 0) {
+			array[i] = value;
+		}
 	}
-	cout << endl << MESSAGE_RESULT;
-	for (int i = 0; i < vector.size(); ++i) {
-		cout << vector[i] << ' ';
+
+	cout << MESSAGE_RESULT << endl;
+	for (int i = 0; i < size; ++i) {
+		cout << array[i] << ' ';
 	}
+
 	return 0;
 } //1
 float functMediaDeDiez() {
@@ -63,7 +65,7 @@ int functMultiples() {
 		multiples[i] = accumulator;
 	}
 	cout << endl << "Los valores son: ";
-	for (int i = 0; i < multiples.size(); ++i) {
+	for (int i = 0;  i < unsigned(multiples.size()); ++i) {
 		cout << multiples[i] << ' ';
 	}
 	return 0;
@@ -85,11 +87,11 @@ void functDosArray() {
 	}
 
 	cout << endl << "Los valores son: " << endl;
-	for (int i = 0; i < vectorNames.size(); ++i) {
+	for (int i = 0; i < unsigned(vectorNames.size()); ++i) {
 		cout << vectorNames[i] << ' ';
 	}
 	cout << endl << "Los tamanos respectivos son: " << endl;
-	for (int i = 0; i < vectorNames.size(); ++i) {
+	for (int i = 0; i < unsigned(vectorNames.size()); ++i) {
 		cout << vectorNames[i].length() << ' ';
 	}
 } //5
@@ -227,15 +229,15 @@ int functPointerExtra() {
 	}
 	return 0;
 }
-void functAllocMemory() {
+void dynamicMemoryAtRuntime() {
 
 	int size;
-	cout << ASK_TYPE_ELEMENT_SIZE << endl;
+	cout << ASK_FOR_CONTAINER_SIZE;
 	cin >> size;
 	int* array = new int [size];
 	int value = 0;
 
-	cout << USER_INPUT_VALUE << endl;
+	cout << ADD_USER_INPUT_VALUES << endl;
 	for (int i = 0; i < size; ++i) {
 		cin >> value;
 		if (value >= 0) {

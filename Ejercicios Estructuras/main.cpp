@@ -18,7 +18,7 @@ class Amstaff :public Dog {
 int main() {
 
     //from examples.h
-    /*functPrimerosDos(); 
+    /*addIntegerToArrayAndPrint();
     functMediaDeDiez(); 
     functMultiples(); 
     functDosArray(); 
@@ -29,8 +29,8 @@ int main() {
     functOrder(); 
     functMonths(); 
     functPointerExtra(); 
-    functAllocMemory();*/
-
+    */
+    functMultiples();
     //from classes.h
     /*CrazyNumber cr1(3, 5);
     CrazyNumber cr2(2, 4);
@@ -40,7 +40,13 @@ int main() {
     Kira->Bark();*/
 
     //from lists.h
-
+    /*insertInFront();
+    insertInLast(&first,"testing string");
+    printList();*/
+    
+    //array only
+    //dynamicMemoryAtRuntime();
 
     system("pause>0");
+    return 0;
 }
