@@ -7,21 +7,16 @@
 #include "examples.h"
 #include "classes.h"
 #include "lists.h"
+#include "sorting.h"
 
-using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
+//macros
+#define ASK_FOR_CONTAINER_SIZE "Type your container size: "
+#define ADD_USER_INPUT_VALUES "Add those values to this container: "
+#define CONDITION_TO_STOP "Add possitive values; cancels with negative values: "
+#define MESSAGE_RESULT "Operation result: "
 
-constexpr auto ASK_FOR_CONTAINER_SIZE = "Type your container size: ";
-constexpr auto ADD_USER_INPUT_VALUES = "Add those values to this container: ";
-constexpr auto CONDITION_TO_STOP = "Add possitive values; cancels with negative values: ";
-constexpr auto MESSAGE_RESULT = "Operation result: ";
-constexpr auto N = 10;//macro defined in c++11 and superior
-
-//this could perfectly be in the header file of classes.h
-class Amstaff :public Dog {
-    void Bark() {
-        cout << "Woof...\n";
-    }
-};
+//bad use of namespace; should use e.g. 'std::string' or 'std::cout'
+using namespace std;
 
 int main() {
 
@@ -53,19 +48,46 @@ int main() {
     insertInLast(&first,"testing string");
     printList();*/
     
-    /*****Sorting arrays*********/
+         /*****Sorting arrays*********/
+    /*****PART 1.1: HARDCODED ARRAY*********/
     
-    int wholeNumbers[10]{};
+    //TODO: fix when more than 2 values are added after a greater one
+    /*int wholeNumbers[N] = {7,2,3,2,5,3,4};
 
-    cout << ADD_USER_INPUT_VALUES;
-    for (auto& i : wholeNumbers) {//auto instead using the primitive types such as int, float, double...
-        cin >> i;
-    }
-
-    cout << MESSAGE_RESULT;
+    cout << "Unsorted array: \n";
     for (int i : wholeNumbers) {
         cout << i << ' ';
     }
+
+    swappingNeighbors(wholeNumbers);
+
+    cout << "\nSorted array: \n";
+    for (int i : wholeNumbers) {
+        cout << i << ' ';
+    }
+    cout << endl;*/
+
+    /*****PART 1.2: USER INPUT ARRAY*********/
+
+    int wholeNumbers2[N]{};
+
+    cout << ADD_USER_INPUT_VALUES;
+    for (int& i : wholeNumbers2) {
+        cin >> i;
+    }
+
+    cout << "Unsorted array: \n";
+    for (int i : wholeNumbers2) {
+        cout << i << ' ';
+    }
+
+    bubbleSortAscending(wholeNumbers2);
+
+    cout << "\nSorted array: \n";
+    for (int i : wholeNumbers2) {
+        cout << i << ' ';
+    }
+
 
     system("pause>0");
     return 0;

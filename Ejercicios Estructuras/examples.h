@@ -1,5 +1,13 @@
 #pragma once
 
+#define ASK_FOR_CONTAINER_SIZE "Type your container size: "
+#define ADD_USER_INPUT_VALUES "Add those values to this container: "
+#define CONDITION_TO_STOP "Add possitive values; cancels with negative values: "
+#define MESSAGE_RESULT "Operation result: "
+#define N 5
+
+using namespace std; 
+
 /*adds a size to a vector to add elements and print them afterwards*/
 int addIntegerToArrayAndPrint() {
 
@@ -58,7 +66,7 @@ int functMultiples() {
 		multiples[i] = accumulator;
 	}
 	cout << endl << "Los valores son: ";
-	for (int i = 0;  i < unsigned(multiples.size()); ++i) {
+	for (int i = 0;  i < multiples.size(); ++i) {
 		cout << multiples[i] << ' ';
 	}
 	return 0;
@@ -80,11 +88,11 @@ void functDosArray() {
 	}
 
 	cout << endl << "Los valores son: " << endl;
-	for (int i = 0; i < unsigned(vectorNames.size()); ++i) {
+	for (int i = 0; i < vectorNames.size(); ++i) {
 		cout << vectorNames[i] << ' ';
 	}
 	cout << endl << "Los tamanos respectivos son: " << endl;
-	for (int i = 0; i < unsigned(vectorNames.size()); ++i) {
+	for (int i = 0; i < vectorNames.size(); ++i) {
 		cout << vectorNames[i].length() << ' ';
 	}
 } //5

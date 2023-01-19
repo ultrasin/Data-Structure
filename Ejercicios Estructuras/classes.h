@@ -1,6 +1,12 @@
 #pragma once
 
-using std::string; using std::cout; using std::cin; using std::endl;
+#define ASK_FOR_CONTAINER_SIZE "Type your container size: "
+#define ADD_USER_INPUT_VALUES "Add those values to this container: "
+#define CONDITION_TO_STOP "Add possitive values; cancels with negative values: "
+#define MESSAGE_RESULT "Operation result: "
+#define N 5
+
+using namespace std;
 
 class CrazyNumber {
 
@@ -24,7 +30,14 @@ public:
 		return cr3;
 	}
 };//overloading operators
+
 class Dog {
 public:
 	virtual void Bark() = 0;
+};
+
+class Amstaff :public Dog {
+	void Bark() {
+		cout << "Woof...\n";
+	}
 };
