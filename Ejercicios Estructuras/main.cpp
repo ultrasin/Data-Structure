@@ -20,6 +20,7 @@ using namespace std;
 
 int main() {
 
+    cout << "migue";
     //from examples.h
     /*addIntegerToArrayAndPrint();
     functMediaDeDiez(); 
