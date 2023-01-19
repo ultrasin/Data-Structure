@@ -8,6 +8,14 @@
 #include "classes.h"
 #include "lists.h"
 
+using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
+
+constexpr auto ASK_FOR_CONTAINER_SIZE = "Type your container size: ";
+constexpr auto ADD_USER_INPUT_VALUES = "Add those values to this container: ";
+constexpr auto CONDITION_TO_STOP = "Add possitive values; cancels with negative values: ";
+constexpr auto MESSAGE_RESULT = "Operation result: ";
+constexpr auto N = 10;//macro defined in c++11 and superior
+
 //this could perfectly be in the header file of classes.h
 class Amstaff :public Dog {
     void Bark() {
@@ -29,8 +37,9 @@ int main() {
     functOrder(); 
     functMonths(); 
     functPointerExtra(); 
-    */
     functMultiples();
+    */
+
     //from classes.h
     /*CrazyNumber cr1(3, 5);
     CrazyNumber cr2(2, 4);
@@ -44,8 +53,19 @@ int main() {
     insertInLast(&first,"testing string");
     printList();*/
     
-    //array only
-    //dynamicMemoryAtRuntime();
+    /*****Sorting arrays*********/
+    
+    int wholeNumbers[10]{};
+
+    cout << ADD_USER_INPUT_VALUES;
+    for (auto& i : wholeNumbers) {//auto instead using the primitive types such as int, float, double...
+        cin >> i;
+    }
+
+    cout << MESSAGE_RESULT;
+    for (int i : wholeNumbers) {
+        cout << i << ' ';
+    }
 
     system("pause>0");
     return 0;

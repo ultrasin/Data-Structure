@@ -1,12 +1,5 @@
 #pragma once
 
-using std::string; using std::cout; using std::cin; using std::vector; using std::endl; using std::accumulate;
-
-constexpr auto ASK_FOR_CONTAINER_SIZE = "Type your container size: ";
-constexpr auto ADD_USER_INPUT_VALUES = "Add those values to this container: ";
-constexpr auto CONDITION_TO_STOP = "Add possitive values; cancels with negative values: ";
-constexpr auto MESSAGE_RESULT = "Operation result: ";
-
 /*adds a size to a vector to add elements and print them afterwards*/
 int addIntegerToArrayAndPrint() {
 
