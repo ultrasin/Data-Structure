@@ -1,32 +1,23 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <numeric>
-#include <math.h>
-#include <cstdlib>
 #include "examples.h"
 #include "classes.h"
 #include "lists.h"
 #include "sorting.h"
+#include "recursion.h"
 
-//macros
-#define ASK_FOR_CONTAINER_SIZE "Type your container size: "
-#define ADD_USER_INPUT_VALUES "Add those values to this container: "
-#define CONDITION_TO_STOP "Add possitive values; cancels with negative values: "
-#define MESSAGE_RESULT "Operation result: "
+//using std namespace is bad;
+//should use e.g. 'std::string' or 'std::cout'.
 
-//bad use of namespace; should use e.g. 'std::string' or 'std::cout'
 using namespace std;
 
 int main() {
 
-    cout << "migue";
     //from examples.h
     /*addIntegerToArrayAndPrint();
     functMediaDeDiez(); 
     functMultiples(); 
     functDosArray(); 
-    functSquareCube(); 
+    functSquareAndCube(); 
     functInverse(); 
     functGrades(); 
     functMenosUno();
@@ -68,9 +59,9 @@ int main() {
     }
     cout << endl;*/
 
-    /*****PART 1.2: USER INPUT ARRAY*********/
+    /*****PART 1.2: USER INPUT ARRAY - THE SOLUTION (do not cheat)*********/
 
-    int wholeNumbers2[N]{};
+    /*int wholeNumbers2[N]{};
 
     cout << ADD_USER_INPUT_VALUES;
     for (int& i : wholeNumbers2) {
@@ -80,16 +71,37 @@ int main() {
     cout << "Unsorted array: \n";
     for (int i : wholeNumbers2) {
         cout << i << ' ';
+    }*/
+
+    /*int copyArray[N]{};
+
+    for (int i = 0; i < N; i++) {
+        copyArray[i] = wholeNumbers2[i];
     }
+    
+    bubbleSortAscending(copyArray);
+    bubbleSortDescending(wholeNumbers2);
 
-    bubbleSortAscending(wholeNumbers2);
-
-    cout << "\nSorted array: \n";
+    cout << "\n\nSorted array Descending: \n";
     for (int i : wholeNumbers2) {
         cout << i << ' ';
     }
 
+    cout << "\n\nSorted array Ascending: \n";
+    for (int i : copyArray) {
+        cout << i << ' ';
+    }*/
 
+    /*
+    insertionSort(wholeNumbers2);
+
+    cout << "\n\nArray using insertion sort: \n";
+    for (int i : wholeNumbers2) {
+        cout << i << ' ';
+    }*/
+
+    //cout << factorial(4);
+    cout << fibonacci(3);
     system("pause>0");
     return 0;
 }

@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="classes.h" />
     <ClInclude Include="examples.h" />
+    <ClInclude Include="recursion.h" />
     <ClInclude Include="sorting.h" />
     <ClInclude Include="lists.h" />
   </ItemGroup>

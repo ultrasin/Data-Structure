@@ -1,5 +1,11 @@
 #pragma once
 
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <math.h>
+#include <cstdlib>
+
 #define ASK_FOR_CONTAINER_SIZE "Type your container size: "
 #define ADD_USER_INPUT_VALUES "Add those values to this container: "
 #define CONDITION_TO_STOP "Add possitive values; cancels with negative values: "
@@ -29,7 +35,10 @@ int addIntegerToArrayAndPrint() {
 	for (int i = 0; i < size; ++i) {
 		cout << array[i] << ' ';
 	}
-
+		//memory will be allocated once user gives input
+		//rule of thumb: assume user is dumb. Do not give user redimension. 
+		//Also, delete once used and you don't need it.
+	delete array;
 	return 0;
 } //1
 float functMediaDeDiez() {
@@ -96,7 +105,7 @@ void functDosArray() {
 		cout << vectorNames[i].length() << ' ';
 	}
 } //5
-int functSquareCube() {
+int functSquareAndCube() {
 
 	const int size = 10;
 	int arrNumberList[size]{};
@@ -250,5 +259,10 @@ void dynamicMemoryAtRuntime() {
 	for (int i = 0; i < size; ++i) {
 		cout << array[i] << ' ';
 	}
+		//memory will be allocated once user gives input
+		//rule of thumb: assume user is dumb. Dont give user chance to redimension
+		//Also, delete once you won't need it anymore.
+
+	delete array;
 }
 

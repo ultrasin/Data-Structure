@@ -1,5 +1,11 @@
 #pragma once
 
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <math.h>
+#include <cstdlib>
+
 #define ASK_FOR_CONTAINER_SIZE "Type your container size: "
 #define ADD_USER_INPUT_VALUES "Add those values to this container: "
 #define CONDITION_TO_STOP "Add possitive values; cancels with negative values: "

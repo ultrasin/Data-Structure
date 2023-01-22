@@ -1,5 +1,10 @@
 #pragma once
 
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <math.h>
+#include <cstdlib>
 #include <string>
 #include <map>
 #include <list>
