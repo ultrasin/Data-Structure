@@ -17,3 +17,16 @@ int fibonacci(int _n) {
 		return fibonacci(_n - 1) + fibonacci(_n - 2);
 	}
 }
+
+void hanoiTower(int diskQuantity, string originRod, string destinyRod,
+	string auxiliaryRod)
+{
+	if (diskQuantity == 0) {
+		return;
+	}
+	hanoiTower(diskQuantity - 1, originRod, auxiliaryRod, destinyRod);
+	cout << "Moved disk" << diskQuantity 
+		 << " from " << originRod 
+		 << " to rod " << destinyRod << endl;
+	hanoiTower(diskQuantity - 1, auxiliaryRod, destinyRod, originRod);
+}

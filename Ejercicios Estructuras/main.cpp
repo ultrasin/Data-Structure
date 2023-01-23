@@ -8,13 +8,13 @@
 //using std namespace is bad;
 //should use e.g. 'std::string' or 'std::cout'.
 
-using namespace std;
+using std::cout; using std::string; using std::cin; using std::endl;
 
 int main() {
 
     //from examples.h
     /*addIntegerToArrayAndPrint();
-    functMediaDeDiez(); 
+    functMediaDeDiez(); //wrote originally in spanish, try to search for translation for unknown functions
     functMultiples(); 
     functDosArray(); 
     functSquareAndCube(); 
@@ -101,7 +101,8 @@ int main() {
     }*/
 
     //cout << factorial(4);
-    cout << fibonacci(3);
+    //cout << fibonacci(3);
+    hanoiTower(3,"origin","destiny","auxiliary");
     system("pause>0");
     return 0;
 }
