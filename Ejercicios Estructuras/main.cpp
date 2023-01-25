@@ -6,7 +6,7 @@
 #include "recursion.h"
 
 //using std namespace is bad;
-//should use e.g. 'std::string' or 'std::cout'.
+//should use e.g. 'std::string' or 'std::cout' as follows...
 
 using std::cout; using std::string; using std::cin; using std::endl;
 
@@ -39,10 +39,12 @@ int main() {
     /*insertInFront();
     insertInLast(&first,"testing string");
     printList();*/
+
+    Person myself(30,"Diego",1.81);
+    myself.getInfo();
     
          /*****Sorting arrays*********/
     /*****PART 1.1: HARDCODED ARRAY*********/
-    
     //TODO: fix when more than 2 values are added after a greater one
     /*int wholeNumbers[N] = {7,2,3,2,5,3,4};
 
@@ -60,7 +62,6 @@ int main() {
     cout << endl;*/
 
     /*****PART 1.2: USER INPUT ARRAY - THE SOLUTION (do not cheat)*********/
-
     /*int wholeNumbers2[N]{};
 
     cout << ADD_USER_INPUT_VALUES;
@@ -72,7 +73,6 @@ int main() {
     for (int i : wholeNumbers2) {
         cout << i << ' ';
     }*/
-
     /*int copyArray[N]{};
 
     for (int i = 0; i < N; i++) {
@@ -91,7 +91,6 @@ int main() {
     for (int i : copyArray) {
         cout << i << ' ';
     }*/
-
     /*
     insertionSort(wholeNumbers2);
 
@@ -100,9 +99,11 @@ int main() {
         cout << i << ' ';
     }*/
 
-    //cout << factorial(4);
-    //cout << fibonacci(3);
-    hanoiTower(3,"origin","destiny","auxiliary");
+    //from recursion.h
+    /*cout << factorial(4);
+    cout << fibonacci(3);
+    hanoiTower(3,"origin","destiny","auxiliary");*/
+
     system("pause>0");
     return 0;
 }
