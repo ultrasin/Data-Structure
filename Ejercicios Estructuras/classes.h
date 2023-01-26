@@ -6,26 +6,8 @@
 #define MESSAGE_RESULT "Operation result: "
 #define N 5
 
-class Person {
-private:
-	int age;
-	string name;
-	float height;
-public:
-	Person(int _age,string _name,float _height) {
-		age = _age;
-		name = _name;
-		height = _height;
-	}
-	void getInfo() {
-		cout << "Age: " << age << endl 
-			 << " Name: " << name << endl
-			 << " Height: " << height << "cm " << endl;
-	}
-};
-
 class CrazyNumber {
-
+	//overloading operators
 	int numberOne;
 	int numberTwo;
 
@@ -45,7 +27,7 @@ public:
 		cr3.numberTwo = this->numberTwo + cr2.numberTwo;
 		return cr3;
 	}
-};//overloading operators
+};
 
 class Dog {
 public:

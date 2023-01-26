@@ -40,8 +40,8 @@ int main() {
     insertInLast(&first,"testing string");
     printList();*/
 
-    Person myself(30,"Diego",1.81);
-    myself.getInfo();
+    //Person myself(30,"Name",1.81F);
+    //myself.getInfo();
     
          /*****Sorting arrays*********/
     /*****PART 1.1: HARDCODED ARRAY*********/
@@ -103,7 +103,7 @@ int main() {
     /*cout << factorial(4);
     cout << fibonacci(3);
     hanoiTower(3,"origin","destiny","auxiliary");*/
-
+    cout << twoAndFour(5);
     system("pause>0");
     return 0;
 }

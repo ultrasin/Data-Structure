@@ -30,3 +30,13 @@ void hanoiTower(int diskQuantity, string originRod, string destinyRod,
 		 << " to rod " << destinyRod << endl;
 	hanoiTower(diskQuantity - 1, auxiliaryRod, destinyRod, originRod);
 }
+
+//algorithm for counting 1,2,5,11,21,38
+int twoAndFour(int _number) {
+	if (_number < 1) {
+		return _number;
+	}
+	else {
+		return _number + twoAndFour(_number - 2) + twoAndFour(_number - 1);
+	}
+}
