@@ -19,8 +19,3 @@ int functOrder();
 void dynamicMemoryAtRuntime();
 
 #endif // !EXAMPLES_H
-
-
-
-
-
