@@ -16,7 +16,6 @@ void functInverse();
 void functGrades();
 int functMenosUno();
 int functOrder();
-void functMonths();
 void dynamicMemoryAtRuntime();
 
 #endif // !EXAMPLES_H

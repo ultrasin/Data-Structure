@@ -8,13 +8,15 @@
 //using std namespace is bad;
 //should use e.g. 'std::string' or 'std::cout' as follows...
 
-using std::cout; using std::string; using std::cin; using std::endl;
+using std::cout; using std::string; using std::cin; using std::endl; using std::ostream;
 
 int main() {
 
     //USE FUNCTIONS FROM ANY HEADER FILE TO TEST//
-    
-    cout << twoAndFour(5);
+ 
+    //example
+    hanoiTower(3, "origin", "destiny", "auxiliary");
+
     system("pause>0");
     return 0;
 }

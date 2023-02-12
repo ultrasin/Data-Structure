@@ -7,7 +7,6 @@
 #define MESSAGE_RESULT "Operation result: "
 #define N 5
 
-int NumberOverloading();
 void NewDog();
 
 #endif //!CLASSES_H

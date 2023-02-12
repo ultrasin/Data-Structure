@@ -39,12 +39,3 @@ void operator<<(ostream& _cout, Person& _personClass) {
 		<< "Name: " << _personClass.name << endl
 		<< "Height: " << _personClass.height << "cm " << endl;
 }
-
-void printList(Node* _node)
-{
-	while (_node != NULL) {
-		cout << _node->data;
-		cout << ' ';
-		_node = _node->next;
-	}
-}

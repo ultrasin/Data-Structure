@@ -2,7 +2,7 @@
 #include <string>
 #include "recursion.h"
 
-using std::cout; using std::string; using std::endl;
+using std::cout; using std::string; using std::endl; using std::ostream;
 
 int factorial(int _n) {
 	if (_n > 1) {

@@ -35,6 +35,7 @@ int addIntegerToArrayAndPrint() {
 	delete array;
 	return 0;
 } //1
+
 float functMediaDeDiez() {
 
 	float size = 10;
@@ -52,6 +53,7 @@ float functMediaDeDiez() {
 	cout << "La media es de: " << average;
 	return 0;
 } //3
+
 int functMultiples() {
 
 	int total;
@@ -74,6 +76,7 @@ int functMultiples() {
 	}
 	return 0;
 } //4
+
 void functDosArray() {
 
 	int vectorSize;
@@ -99,6 +102,7 @@ void functDosArray() {
 		cout << vectorNames[i].length() << ' ';
 	}
 } //5
+
 int functSquareAndCube() {
 
 	const int size = 10;
@@ -120,6 +124,7 @@ int functSquareAndCube() {
 
 	return 0;
 } //6
+
 void functInverse() {
 
 	const int size = 5;
@@ -138,6 +143,7 @@ void functInverse() {
 	}
 
 } //7
+
 void functGrades() {
 
 	const int size = 5;
@@ -169,6 +175,7 @@ void functGrades() {
 	cout << endl << "Elemento maximo es: " << maximum << endl;
 	cout << endl << "El promedio es: " << average << endl;
 }
+
 int functMenosUno() {
 
 	int arrayGrades[10]{};
@@ -186,6 +193,7 @@ int functMenosUno() {
 	}
 	return 0;
 }
+
 int functOrder() {
 
 	const int size = 15;
@@ -218,9 +226,7 @@ int functOrder() {
 
 	return 0;
 }
-void functMonths() {
 
-}
 int functPointerExtra() {
 	int numero[5]{};
 
@@ -233,6 +239,7 @@ int functPointerExtra() {
 	}
 	return 0;
 }
+
 void dynamicMemoryAtRuntime() {
 
 	int size;
