@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="classes.cpp" />
+    <ClCompile Include="examples.cpp" />
+    <ClCompile Include="lists.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="recursion.cpp" />
+    <ClCompile Include="sorting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="classes.h" />
