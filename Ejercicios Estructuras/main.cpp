@@ -18,7 +18,7 @@ int main() {
     //example
     //hanoiTower(3, "origin", "destiny", "auxiliary");
 
-    //PrintGraphMatrix();     //prints an empty matrix
+    //use add edge for the matrix at the end of graphs.cpp
     addEdge(4,4,5);
     PrintGraphMatrix();
 
