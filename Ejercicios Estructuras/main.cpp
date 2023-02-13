@@ -4,6 +4,7 @@
 #include "lists.h"
 #include "sorting.h"
 #include "recursion.h"
+#include "graphs.h"
 
 //using std namespace is bad;
 //should use e.g. 'std::string' or 'std::cout' as follows...
@@ -15,7 +16,11 @@ int main() {
     //USE FUNCTIONS FROM ANY HEADER FILE TO TEST//
  
     //example
-    hanoiTower(3, "origin", "destiny", "auxiliary");
+    //hanoiTower(3, "origin", "destiny", "auxiliary");
+
+    //PrintGraphMatrix();     //prints an empty matrix
+    addEdge(4,4,5);
+    PrintGraphMatrix();
 
     system("pause>0");
     return 0;
