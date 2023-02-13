@@ -127,11 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ejercicios Estructuras.cpp" />
+    <ClCompile Include="classes.cpp" />
+    <ClCompile Include="examples.cpp" />
+    <ClCompile Include="lists.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="recursion.cpp" />
+    <ClCompile Include="sorting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="classes.h" />
     <ClInclude Include="examples.h" />
+    <ClInclude Include="recursion.h" />
+    <ClInclude Include="sorting.h" />
+    <ClInclude Include="lists.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

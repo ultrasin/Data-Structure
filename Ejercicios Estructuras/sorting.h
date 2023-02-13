@@ -1,5 +1,5 @@
-#ifndef CLASSES_H
-#define CLASSES_H
+#ifndef SORTING_H
+#define SORTING_H
 
 #define ASK_FOR_CONTAINER_SIZE "Type your container size: "
 #define ADD_USER_INPUT_VALUES "Add those values to this container: "
@@ -7,6 +7,9 @@
 #define MESSAGE_RESULT "Operation result: "
 #define N 5
 
-void NewDog();
+int swappingNeighbors(int _array[]);
+void bubbleSortAscending(int _array[]);
+void bubbleSortDescending(int _array[]);
+void insertionSort(int _array[]);
 
-#endif //!CLASSES_H
+#endif // !SORTING_H
