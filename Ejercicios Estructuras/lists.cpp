@@ -22,13 +22,13 @@ public:
 	}
 };
 
-class Node {
+class TreeNode {
 public:
 	Person data;
-	Node* next = NULL;
+	TreeNode* next = NULL;
 }*first, * last;
 
-void firstNode(Node* _head, Person _data) {
+void firstNode(TreeNode* _head, Person _data) {
 	_head->data = _data;
 	_head->next = NULL;
 }

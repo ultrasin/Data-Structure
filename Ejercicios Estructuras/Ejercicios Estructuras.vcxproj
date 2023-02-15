@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="binaryTree.cpp" />
     <ClCompile Include="classes.cpp" />
     <ClCompile Include="examples.cpp" />
     <ClCompile Include="graphs.cpp" />
@@ -136,8 +137,10 @@
     <ClCompile Include="recursion.cpp" />
     <ClCompile Include="sorting.cpp" />
     <ClCompile Include="stack.cpp" />
+    <ClCompile Include="treeNode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="binaryTree.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="examples.h" />
     <ClInclude Include="graphs.h" />
@@ -145,6 +148,7 @@
     <ClInclude Include="sorting.h" />
     <ClInclude Include="lists.h" />
     <ClInclude Include="stack.h" />
+    <ClInclude Include="treeNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

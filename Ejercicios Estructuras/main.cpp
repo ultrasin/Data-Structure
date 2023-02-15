@@ -5,6 +5,7 @@
 #include "sorting.h"
 #include "recursion.h"
 #include "graphs.h"
+#include "binaryTree.h"
 
 //using std namespace is bad;
 //should use e.g. 'std::string' or 'std::cout' as follows...
@@ -19,8 +20,15 @@ int main() {
     //hanoiTower(3, "origin", "destiny", "auxiliary");
 
     //use add edge for the matrix at the end of graphs.cpp
-    addEdge(4,4,5);
-    PrintGraphMatrix();
+    //addEdge(4,4,5);
+    //PrintGraphMatrix();
+
+    BinaryTree tree;
+    for (int i = 0; i < 4; ++i) {
+        int r = rand() % 100;
+        tree.insertNode(r);
+        cout << r << ' ';
+    }
 
     system("pause>0");
     return 0;
